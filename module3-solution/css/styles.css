@@ -1,0 +1,155 @@
+
+
+
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav {
+  background-color: #808080;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 20px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .25;
+  float: left;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-toggle{
+	float:right;
+}
+
+.navbar-toggle:hover{
+	box-shadow: 1px 1px 1px black;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #000;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+#nav-list a{
+	clear: both;
+	border: 1px solid black;
+	float: right;
+	position: relative;
+	margin:15px 0px 0px 0px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	background-color: #808080;
+	font-size: 1em; 
+}
+
+#nav-list a:hover{
+	color: #000;
+	text-shadow: 1px 1px 1px black;
+	background-color: #fff;
+}
+
+#main-content .section-item{
+	margin: 15px;
+	height: auto;
+	background-color: #808080;
+	border:1px solid black;
+}
+
+#page-title{
+	font-size:3em;
+	font-weight: bold;
+	color: black;
+	background-color: #fff;
+}
+
+#chicken,#beef,#sushi{
+	font-size:1.5em;
+	text-shadow: 1px 1px 1px black;
+	color:#000;
+}
+
+p{
+	font-size:.6em;
+	text-shadow: none;
+	padding: 15px;
+}
+
+#main-content {
+	margin: auto;
+	padding: 0px 0px 2px 0px;
+}
+
+
+
+
+
+
+
+
+/* extra small devics */
+@media(max-width: 767px){}
+
+	#header-h1{
+		padding:10px;
+		font-size: 5vw;
+	}
+	/*navbar toogle*/
+	#header-nav .navbar-header button.navbar-toggle {
+    	margin-top: -15px;
+    }	
+	#collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  #main-content .section-item {
+		margin: 25px;
+	}
+}
+
+@media (max-width: 479px) {
+	/*navbar header*/
+	#header-h1 { /* Logo name */
+	    padding: 5px;
+	    font-size: 6.5vw; /* 1vw = 1% of viewport width */
+	}
+    
+	/*navbar toogle & list*/
+	#collapsable-nav {
+	}
+    
+	#header-nav .navbar-header button.navbar-toggle {
+    	margin-top: -10px;
+    }	
+	#nav-list a {
+		font-size: 1em;
+	}
+
+	#main-content .section-item {
+		margin: 25px;
+	}
+}
